@@ -20,7 +20,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.Preference;
-import android.preference.PreferenceActivity;
+import android.preference.PreferenceDrawerActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
@@ -40,7 +40,7 @@ import com.cyanogenmod.trebuchet.R;
 
 import java.util.List;
 
-public class Preferences extends PreferenceActivity
+public class Preferences extends PreferenceDrawerActivity
         implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     private static final String TAG = "Trebuchet.Preferences";
