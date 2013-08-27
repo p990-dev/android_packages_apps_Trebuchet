@@ -19,7 +19,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
    <!-- Global search icon -->
-   <com.cyanogenmod.trebuchet.HolographicImageView
+    <com.cyanogenmod.trebuchet.HolographicImageView
+            android:id="@+id/rocket_button"
+            android:onClick="onClickRocketButton"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_home_rocket_holo_dark"
+            android:paddingTop="10dp"
+            android:focusable="true"
+            android:clickable="true"
+            />
+
+    <com.cyanogenmod.trebuchet.HolographicImageView
         style="@style/SearchButton"
         android:id="@+id/search_button"
         android:layout_width="match_parent"
@@ -31,7 +43,8 @@
         android:onClick="onClickSearchButton"
         android:focusable="true"
         android:clickable="true"
-        android:contentDescription="@string/accessibility_search_button" />
+        android:contentDescription="@string/accessibility_search_button"
+        android:layout_marginTop="2dp"/>
 
     <!-- Voice search icon -->
     <com.cyanogenmod.trebuchet.HolographicImageView
