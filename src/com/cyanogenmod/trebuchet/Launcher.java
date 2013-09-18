@@ -89,8 +89,8 @@ import android.view.View;
 import android.view.View.OnLongClickListener;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
-import android.view.ViewGroup.MarginLayoutParams;
 import android.view.ViewTreeObserver;
+import android.view.ViewGroup.MarginLayoutParams;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.view.WindowManager;
 import android.view.accessibility.AccessibilityEvent;
@@ -107,11 +107,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.common.Search;
-import com.cyanogenmod.trebuchet.DropTarget.DragObject;
-import com.cyanogenmod.trebuchet.preference.Preferences;
-import com.cyanogenmod.trebuchet.preference.PreferencesProvider;
 
 import org.cyanogenmod.support.ui.LiveFolder;
+
+import com.cyanogenmod.trebuchet.DropTarget.DragObject;
+import com.cyanogenmod.trebuchet.preference.*;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -127,6 +127,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -2396,15 +2397,6 @@ public final class Launcher extends Activity
         v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 
         onSearchRequested();
-    }
-
-
-    public void onClickRocketButton(View v) {
-        v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
-
-        Intent rocketlauncher = new Intent().setClassName("com.cyanogenmod.trebuchet",
-               "com.cyanogenmod.trebuchet.RocketLauncher");
-        startActivity(rocketlauncher);
     }
 
     /**
